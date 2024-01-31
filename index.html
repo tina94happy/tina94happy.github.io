@@ -145,5 +145,18 @@
             }
         });
     </script>
+
+<h2 id="showtime">
+ &nbsp;</h2>
+<script>
+        var show = document.querySelector('#showtime');
+        var myTimer = setInterval(changeEvery5, 1000);
+
+        function changeEvery5() {
+            var today = new Date();
+            show.innerHTML = today.toLocaleTimeString();
+            //today.toLocaleTimeString() 用來取得指定日期物件中的當地時間，並以字串方式顯示。
+        }
+</script>
 </body>
 </html>
